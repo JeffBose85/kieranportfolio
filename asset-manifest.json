@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kieranportfolio/static/css/main.f855e6bc.css",
+    "main.js": "/kieranportfolio/static/js/main.aac4fb91.js",
+    "static/js/453.6d5ed217.chunk.js": "/kieranportfolio/static/js/453.6d5ed217.chunk.js",
+    "static/media/logo.svg": "/kieranportfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/kieranportfolio/index.html",
+    "main.f855e6bc.css.map": "/kieranportfolio/static/css/main.f855e6bc.css.map",
+    "main.aac4fb91.js.map": "/kieranportfolio/static/js/main.aac4fb91.js.map",
+    "453.6d5ed217.chunk.js.map": "/kieranportfolio/static/js/453.6d5ed217.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.aac4fb91.js"
+  ]
+}
