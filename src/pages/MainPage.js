@@ -1,8 +1,12 @@
+import Header from "../components/Header";
+import Showcase from "../components/Showcase";
+
 const MainPage = () => {
-    return (  
-        <div>
-            This is a test.
-        </div>
+    return (
+        <body>
+            <Header></Header>
+            <Showcase></Showcase>
+        </body>  
     );
 }
  

@@ -2,21 +2,21 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import '../styles/App.css';
 import MainPage from './MainPage';
-import RouterTest from './RouterTest';
 
 function App() {
   return (
-    <>
-     <nav> 
-      <Link to={"/kieranportfolio"}>Home</Link>
-      <Link to={"/kieranportfolio/test"}>Test</Link>
-     </nav>
+    <html>
+    <head>
+      <link rel="stylesheet" href="https://use.typekit.net/hjt1gxe.css"/>
+    </head>
+
 
      <Routes>
        <Route path="/kieranportfolio" element={<MainPage/>} />
-       <Route path="/kieranportfolio/test" element={<RouterTest/>}/>
      </Routes>
-    </>
+
+
+    </html>
   );
 }
 

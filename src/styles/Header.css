@@ -1,0 +1,83 @@
+:root {
+    --mainBannerHeight: 75px;
+    --sideBannerHeight: 95px;
+}
+
+
+body {
+    font-family: komet, sans-serif;
+    overflow: hidden;
+}
+
+.mainbanner h1 {
+    margin:0;
+    font-weight:900;
+    font-size: 60px;
+
+    text-align: center;
+    vertical-align: middle;
+    text-wrap: nowrap;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+
+    width:100%;
+    height: var(--mainBannerHeight);
+    background-color: black;
+    color:white;
+    text-align: center;
+    margin-bottom: calc(var(--sideBannerHeight) - var(--mainBannerHeight));
+}
+
+.mainbanner {
+    position: relative;
+    width: auto;
+}
+
+.sidebanner {
+    position: relative;
+    width:320px;
+    height: var(--sideBannerHeight);
+    background-color: rgb(49, 49, 49);
+}
+
+.leftbanner {
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+
+.rightbanner {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+}
+
+.sidebanner:hover {
+    background-color: maroon;
+}
+
+.sidebanner h2 {
+    position: relative;
+    margin:0;
+
+    width:auto;
+    text-wrap: nowrap;
+    font-size: 40px;
+    padding:20px;
+
+}
+
+.leftbanner h2 {
+    text-align: left;
+}
+
+.rightbanner h2 {
+    text-align: right;
+}
+
+/* @media (max-width: 480px) {
+    .mainbanner h1 {
+        font-size: 3vh;
+        text-align: center;
+        vertical-align: middle;
+    }
+} */
