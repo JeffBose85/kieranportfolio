@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/kieranportfolio/static/css/main.f855e6bc.css",
-    "main.js": "/kieranportfolio/static/js/main.8b7a284b.js",
+    "main.css": "/kieranportfolio/static/css/main.ffb77cb3.css",
+    "main.js": "/kieranportfolio/static/js/main.178d5ff8.js",
     "static/js/453.6d5ed217.chunk.js": "/kieranportfolio/static/js/453.6d5ed217.chunk.js",
+    "static/media/showcaseTestImg.jpg": "/kieranportfolio/static/media/showcaseTestImg.daffee13f010b22dd758.jpg",
     "index.html": "/kieranportfolio/index.html",
-    "main.f855e6bc.css.map": "/kieranportfolio/static/css/main.f855e6bc.css.map",
-    "main.8b7a284b.js.map": "/kieranportfolio/static/js/main.8b7a284b.js.map",
+    "main.ffb77cb3.css.map": "/kieranportfolio/static/css/main.ffb77cb3.css.map",
+    "main.178d5ff8.js.map": "/kieranportfolio/static/js/main.178d5ff8.js.map",
     "453.6d5ed217.chunk.js.map": "/kieranportfolio/static/js/453.6d5ed217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.8b7a284b.js"
+    "static/css/main.ffb77cb3.css",
+    "static/js/main.178d5ff8.js"
   ]
 }
