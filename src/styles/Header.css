@@ -1,12 +1,13 @@
 :root {
     --mainBannerHeight: 75px;
     --sideBannerHeight: 95px;
+    --bannerGap: calc(var(--sideBannerHeight) - var(--mainBannerHeight))
 }
 
 
 body {
     font-family: komet, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .mainbanner h1 {
@@ -20,6 +21,7 @@ body {
 }
 
 header {
+    position: fixed;
     display:flex;
     justify-content: space-between;
 
@@ -28,7 +30,8 @@ header {
     background-color: black;
     color:white;
     text-align: center;
-    margin-bottom: calc(var(--sideBannerHeight) - var(--mainBannerHeight));
+    margin-bottom: var(--bannerGap);
+    z-index: 1;
 }
 
 .mainbanner {
@@ -41,6 +44,7 @@ header {
     width:320px;
     height: var(--sideBannerHeight);
     background-color: rgb(49, 49, 49);
+    cursor: pointer;
 }
 
 .leftbanner {

@@ -1,0 +1,44 @@
+:root {
+    --showcaseWidth: 1920px;
+    --showcaseHeight: 1080px;
+    --showcasePanelWidth: 640px;
+}
+
+.showcase {
+    display:flex;
+    width: var(--showcaseWidth);
+    height:var(--showcaseHeight);
+    background-color: black;
+    margin-top: calc(var(--mainBannerHeight))
+}
+
+.showcasepanel {
+    box-sizing: border-box;
+    width: var(--showcasePanelWidth);
+    height: var(--showcaseHeight);
+    background-color: blueviolet;
+    margin-left:1px;
+    margin-right:1px;
+
+    overflow: hidden;
+}
+
+.showcasepanel img {
+    margin-left:50%;
+    transform: translateX(-50%);
+    height:100%;
+    z-index: -100;
+    filter:grayscale();
+    transition: .5s;
+}
+
+.showcasepanel img:hover{
+    filter: none;
+    transition: .5s;
+}
+
+.test { 
+    height :2000px;
+    width:50px;
+    background-color: purple;
+}
