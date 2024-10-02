@@ -2,7 +2,10 @@
     --mainBannerHeight: 75px;
     --sideBannerHeight: 95px;
     --bannerGap: calc(var(--sideBannerHeight) - var(--mainBannerHeight))
+
+    
 }
+
 
 
 body {
@@ -14,25 +17,46 @@ body {
     margin:0;
     font-weight:900;
     font-size: 60px;
-
+    
     text-align: center;
     vertical-align: middle;
     text-wrap: nowrap;
 }
 
-header {
-    position: fixed;
+
+.headroom {
     display:flex;
     justify-content: space-between;
-
+    
     width:100%;
     height: var(--mainBannerHeight);
     background-color: black;
     color:white;
     text-align: center;
     margin-bottom: var(--bannerGap);
-    z-index: 1;
+    z-index: 200;
+    top:0;
 }
+.headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+  }
+  .headroom--scrolled {
+    transition: transform 200ms ease-in-out;
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(-130%);
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
+  }
+
+.headroom-wrapper {
+    background-color: black;
+}
+
 
 .mainbanner {
     position: relative;
@@ -45,13 +69,17 @@ header {
     height: var(--sideBannerHeight);
     background-color: rgb(49, 49, 49);
     cursor: pointer;
+    color:white;
+    border:none;
 }
 
 .leftbanner {
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    padding-left:6px;
 }
 
 .rightbanner {
+    padding-right:6px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
 }
 

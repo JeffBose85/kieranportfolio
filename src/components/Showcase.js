@@ -28,7 +28,7 @@ const Showcase = () => {
     function getWindowWidth() {
         var width = window.innerWidth;
 
-        var panelWidth = width / panelNum;
+        var panelWidth = (width / panelNum) - 4;
         document.documentElement.style.setProperty('--showcaseWidth', width + 'px');
         document.documentElement.style.setProperty('--showcasePanelWidth', panelWidth + 'px');
 
@@ -48,14 +48,11 @@ const Showcase = () => {
     })
 
     return (
-        <div className="container">
         <div className="showcase">
             <div className="showcasepanel"><img src={TestImage} alt="" /></div>
             <div className="showcasepanel"><img src={TestImage} alt="" /></div>
             <div className="showcasepanel"><img src={TestImage} alt="" /></div>
             
-        </div>
-            <div className="test">{windowHeight}</div>
         </div>
      );
 }

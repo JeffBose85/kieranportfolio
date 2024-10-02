@@ -1,24 +1,23 @@
 :root {
-    --showcaseWidth: 1920px;
-    --showcaseHeight: 1080px;
-    --showcasePanelWidth: 640px;
+    --showcaseWidth: 1920px; /* Default: 1920px, value handled in Showcase Component*/
+    --showcaseHeight: 1080px; /* Default: 1080px, value handled in Showcase Component*/
+    --showcasePanelWidth: 640px; /* Default: 640px, value handled in Showcase Component*/
 }
 
 .showcase {
     display:flex;
+    justify-content: space-evenly;
     width: var(--showcaseWidth);
     height:var(--showcaseHeight);
     background-color: black;
-    margin-top: calc(var(--mainBannerHeight))
+    /* margin-top: calc(var(--mainBannerHeight)) */
 }
 
 .showcasepanel {
     box-sizing: border-box;
     width: var(--showcasePanelWidth);
     height: var(--showcaseHeight);
-    background-color: blueviolet;
-    margin-left:1px;
-    margin-right:1px;
+    background-color: black;
 
     overflow: hidden;
 }
@@ -35,6 +34,7 @@
 .showcasepanel img:hover{
     filter: none;
     transition: .5s;
+    cursor: pointer;
 }
 
 .test { 
