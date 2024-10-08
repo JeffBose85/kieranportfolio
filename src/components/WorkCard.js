@@ -17,7 +17,6 @@ const WorkCard = (work) => {
 
     return ( 
         <button onClick={WorkClicked} className={cardStyle}>
-            <div className="imageblur"></div>
             <div className="workimagecontainer">
                 <img src={process.env.PUBLIC_URL + workData.mainimage} alt="" />
             </div>
