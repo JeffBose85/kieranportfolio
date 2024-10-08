@@ -1,18 +1,25 @@
-import { useEffect } from 'react';
 import '../styles/Showcase.css';
 import '../styles/Header.css';
+import { useEffect } from 'react';
 import { useState } from 'react';
-
-import TestImage from '../images/WorkImages/showcaseTestImg.jpg';
+import { useNavigate } from "react-router-dom";
+import WorkData from '../data/works.json';
 
 const Showcase = () => {
 
-
-    //Add support for dynamic panel numbers?
     const panelNum = 3;
 
     const [windowHeight, setWindowHeight] = useState(getWindowHeight());
     const [windowWidth, setWindowWidth] = useState (getWindowWidth());
+
+    const navigate = useNavigate();
+    const [workData, setWorkData] = useState(WorkData);
+    const [showcaseList, setShowcaseList] = useState(workData.slice(0,panelNum).map((work) => (
+        <button onClick={() => {
+
+            navigate("workpage", {state:{data: work}});
+        }} key={work.id} className="showcasepanel"><img src={process.env.PUBLIC_URL + work.mainimage} alt={work.title} /></button>
+    )));
 
     function getWindowHeight() {
         var height = window.innerHeight;
@@ -49,10 +56,7 @@ const Showcase = () => {
 
     return (
         <div className="showcase">
-            <div className="showcasepanel"><img src={TestImage} alt="" /></div>
-            <div className="showcasepanel"><img src={TestImage} alt="" /></div>
-            <div className="showcasepanel"><img src={TestImage} alt="" /></div>
-            
+            {showcaseList}
         </div>
      );
 }

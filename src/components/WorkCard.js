@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const WorkCard = (work) => {
 
@@ -6,21 +7,16 @@ const WorkCard = (work) => {
     const [cardStyle, setCardStyle] = useState(work.style);
     const [description, setDescription] = useState(workData.shortdescription);
 
+    const navigate = useNavigate();
+
     function WorkClicked() {
-        console.log("BANG");
-        if(cardStyle === "smallworkcard") { 
-            setCardStyle("largeworkcard selected");
-            setDescription(workData.longdescription);
-            work.onClick(workData.id);
-        } else {
-            setCardStyle("smallworkcard");
-            setDescription(workData.shortdescription);
-            work.onClick();
-        }
+        var id = workData.id;
+
+        navigate("workpage", {state:{data: workData}});
     }
 
     return ( 
-        <button disabled={work.disableButton} onClick={WorkClicked} className={cardStyle}>
+        <button onClick={WorkClicked} className={cardStyle}>
             <div className="workimagecontainer">
                 <img src={process.env.PUBLIC_URL + workData.mainimage} alt="nope" />
             </div>

@@ -71,6 +71,8 @@ body {
     cursor: pointer;
     color:white;
     border:none;
+
+    text-decoration: none;
 }
 
 .leftbanner {
