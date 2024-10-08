@@ -10,10 +10,10 @@
     width: var(--showcaseWidth);
     height:var(--showcaseHeight);
     background-color: black;
-    /* margin-top: calc(var(--mainBannerHeight)) */
 }
 
 .showcasepanel {
+    position: relative;
     box-sizing: border-box;
     width: var(--showcasePanelWidth);
     height: var(--showcaseHeight);
@@ -39,8 +39,25 @@
     cursor: pointer;
 }
 
-.test { 
-    height :2000px;
-    width:50px;
-    background-color: purple;
+.showcaseText {
+    opacity: 0%;
+    position: absolute;
+    
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    
+    font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    pointer-events: none;
+
+    color:white;
+    filter: drop-shadow(.3vw .3vw rgba(0, 0, 0, 0.5));
+    text-wrap: balance;
+}
+
+.showcasepanel:hover .showcaseText {
+    opacity: 100%;
+    transition: .75s;
 }

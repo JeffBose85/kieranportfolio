@@ -10,14 +10,14 @@
     {
         "id": 2,
         "title": "Test Work 2",
-        "shortdescription": "Small description w2!",
+        "shortdescription": "This is a test description of the second test work! ",
         "longdescription": "This is a test description of the second test work!",
         "mainimage": "/images/worktestimage2.jpg",
         "images": ["/images/worktestimage1.jpg","/images/worktestimage3.jpg","/images/worktestimage4.jpg"]
     },
     {
         "id": 3,
-        "title": "Test Work 3",
+        "title": "Long Title of Eternal Doom",
         "shortdescription": "Small description w3!",
         "longdescription": "This is a test description of the third test work!",
         "mainimage": "/images/worktestimage3.jpg",
@@ -25,8 +25,8 @@
     },
     {
         "id": 4,
-        "title": "Test Work 4",
-        "shortdescription": "Small description w4!",
+        "title": "Long Title of Eternal Doom",
+        "shortdescription": "This is a test description of the fourth test work! This is a test description of the fourth test work!",
         "longdescription": "This is a test description of the fourth test work!",
         "mainimage": "/images/worktestimage4.jpg",
         "images": ["/images/worktestimage1.jpg","/images/worktestimage3.jpg","/images/worktestimage2.jpg"]

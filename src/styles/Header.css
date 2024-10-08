@@ -1,6 +1,6 @@
 :root {
-    --mainBannerHeight: 75px;
-    --sideBannerHeight: 95px;
+    --mainBannerHeight: 5vw;
+    --sideBannerHeight: 6vw;
     --bannerGap: calc(var(--sideBannerHeight) - var(--mainBannerHeight))
 
     
@@ -16,7 +16,7 @@ body {
 .mainbanner h1 {
     margin:0;
     font-weight:900;
-    font-size: 60px;
+    font-size: 4vw;
     
     text-align: center;
     vertical-align: middle;
@@ -65,7 +65,7 @@ body {
 
 .sidebanner {
     position: relative;
-    width:320px;
+    width:17vw;
     height: var(--sideBannerHeight);
     background-color: rgb(49, 49, 49);
     cursor: pointer;
@@ -95,8 +95,8 @@ body {
 
     width:auto;
     text-wrap: nowrap;
-    font-size: 40px;
-    padding:20px;
+    font-size: 2.3vw;
+    padding:1.5vw;
 
 }
 

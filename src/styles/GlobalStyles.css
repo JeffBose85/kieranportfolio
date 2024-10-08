@@ -12,6 +12,7 @@ body{
     margin:0;
     padding:0;
     background-color: #B9B9B9;
+    overflow-x: hidden;
 }
 
 div {

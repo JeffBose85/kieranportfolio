@@ -11,7 +11,7 @@ const Header = () => {
         <Headroom disableInlineStyles={true} upTolerance={30}>
             <Link to="/kieranportfolio/" className='leftbanner sidebanner'><h2>{leftText}</h2></Link>
             <div className='mainbanner'><h1>KIERAN O'NEILL</h1></div>
-            <Link className='rightbanner sidebanner'><h2>{rightText}</h2></Link>
+            <Link to="/kieranportfolio/aboutme" className='rightbanner sidebanner'><h2>{rightText}</h2></Link>
         </Headroom>
 
      );

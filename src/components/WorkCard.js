@@ -17,11 +17,13 @@ const WorkCard = (work) => {
 
     return ( 
         <button onClick={WorkClicked} className={cardStyle}>
+            <div className="imageblur"></div>
             <div className="workimagecontainer">
-                <img src={process.env.PUBLIC_URL + workData.mainimage} alt="nope" />
+                <img src={process.env.PUBLIC_URL + workData.mainimage} alt="" />
             </div>
             <div className="workinfocontainer">
                 <h1>{workData.title}</h1>
+                <hr></hr>
                 <p>{description}</p>
             </div>
         </button>
