@@ -4,31 +4,31 @@
         "title": "Test Work 1",
         "shortdescription": "Small description w1!",
         "longdescription": "This is a test description of the first test work!",
-        "mainimage": "/images/worktestimage1.jpg",
-        "images": ["/images/worktestimage2.jpg","/images/worktestimage3.jpg","/images/worktestimage4.jpg"]
+        "mainimage": "/kieranportfolio/images/worktestimage1.jpg",
+        "images": ["/kieranportfolio/images/worktestimage2.jpg","/kieranportfolio/images/worktestimage3.jpg","/kieranportfolio/images/worktestimage4.jpg"]
     },
     {
         "id": 2,
         "title": "Test Work 2",
         "shortdescription": "This is a test description of the second test work! ",
         "longdescription": "This is a test description of the second test work!",
-        "mainimage": "/images/worktestimage2.jpg",
-        "images": ["/images/worktestimage1.jpg","/images/worktestimage3.jpg","/images/worktestimage4.jpg"]
+        "mainimage": "/kieranportfolio/images/worktestimage2.jpg",
+        "images": ["/kieranportfolio/images/worktestimage1.jpg","/kieranportfolio/images/worktestimage3.jpg","/kieranportfolio/images/worktestimage4.jpg","/kieranportfolio/images/worktestimage1.jpg","/kieranportfolio/images/worktestimage3.jpg","/kieranportfolio/images/worktestimage4.jpg"]
     },
     {
         "id": 3,
         "title": "Long Title of Eternal Doom",
         "shortdescription": "Small description w3!",
         "longdescription": "This is a test description of the third test work!",
-        "mainimage": "/images/worktestimage3.jpg",
-        "images": ["/images/worktestimage1.jpg","/images/worktestimage2.jpg","/images/worktestimage4.jpg"]
+        "mainimage": "/kieranportfolio/images/worktestimage3.jpg",
+        "images": ["/kieranportfolio/images/worktestimage1.jpg","/kieranportfolio/images/worktestimage2.jpg","/kieranportfolio/images/worktestimage4.jpg"]
     },
     {
         "id": 4,
         "title": "Long Title of Eternal Doom",
         "shortdescription": "This is a test description of the fourth test work! This is a test description of the fourth test work!",
-        "longdescription": "This is a test description of the fourth test work!",
-        "mainimage": "/images/worktestimage4.jpg",
-        "images": ["/images/worktestimage1.jpg","/images/worktestimage3.jpg","/images/worktestimage2.jpg"]
+        "longdescription": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur enim dapibus dui facilisis laoreet. Duis eleifend lacus ante, id ullamcorper magna rhoncus consectetur. Phasellus ornare lectus augue. Proin a ligula lorem. Aliquam tempus, est eget rhoncus finibus, velit est elementum sapien, eu feugiat elit urna in ipsum. Nam blandit rhoncus semper. Praesent congue felis mi, sed fringilla urna aliquam eu. Donec ipsum elit, vehicula sit amet molestie eget, egestas nec lorem.</p> <img src=\"/kieranportfolio/images/worktestimage3.jpg\"/> <p>Test text </p><p>Test text </p> <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1\" allowfullscreen/></iframe> <p>Test text </p> <p>Test text </p>",
+        "mainimage": "/kieranportfolio/images/worktestimage4.jpg",
+        "images": ["/kieranportfolio/images/worktestimage1.jpg","/kieranportfolio/images/worktestimage3.jpg","/kieranportfolio/images/worktestimage2.jpg"]
     }
 ]

@@ -10,15 +10,13 @@ const WorkCard = (work) => {
     const navigate = useNavigate();
 
     function WorkClicked() {
-        var id = workData.id;
-
         navigate("workpage", {state:{data: workData}});
     }
 
     return ( 
         <button onClick={WorkClicked} className={cardStyle}>
             <div className="workimagecontainer">
-                <img src={process.env.PUBLIC_URL + workData.mainimage} alt="" />
+                <img src={workData.mainimage} alt="" />
             </div>
             <div className="workinfocontainer">
                 <h1>{workData.title}</h1>

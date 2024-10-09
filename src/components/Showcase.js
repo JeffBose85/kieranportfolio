@@ -16,7 +16,7 @@ const Showcase = () => {
     const [workData, setWorkData] = useState(WorkData);
     const [showcaseList, setShowcaseList] = useState(workData.slice(0,panelNum).map((work) => (
         <button onClick={() => {navigate("workpage", {state:{data: work}});}} key={work.id} className="showcasepanel">
-            <img src={process.env.PUBLIC_URL + work.mainimage} alt={work.title} />
+            <img src={work.mainimage} alt={work.title} />
             <div className="showcaseText">{work.title}</div> 
         </button>
     )));
