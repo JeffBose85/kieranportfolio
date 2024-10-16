@@ -15,10 +15,6 @@ body{
     overflow-x: hidden;
 }
 
-div {
-    /* animation: fadein 3s; */
-}
-
 ::-webkit-scrollbar {
     width:.4vw;
     background-color: black;

@@ -45,7 +45,7 @@ body {
   }
   .headroom--unpinned {
     position: fixed;
-    transform: translateY(-130%);
+    transform: translateY(-140%);
   }
   .headroom--pinned {
     position: fixed;

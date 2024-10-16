@@ -1,13 +1,14 @@
 import '../styles/Works.css';
 import WorkData from '../data/works.json';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import WorkCard from './WorkCard';
 
 const Works = () => {
 
-    const [workData, setWorkData] = useState(WorkData);
-    const [workList, setWorkList] = useState(workData.map((work) => (
-        <WorkCard onClick={WorkClicked} key={work.id} data={work} style={"smallworkcard"}/>
+    const style = ["smallworkcard"];
+    const [workData] = useState(WorkData);
+    const [workList] = useState(workData.map((work) => (
+        <WorkCard onClick={WorkClicked} key={work.id} data={work} style={style}/>
     )));
 
     function WorkClicked() {

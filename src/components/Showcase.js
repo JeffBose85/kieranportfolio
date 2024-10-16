@@ -9,12 +9,9 @@ const Showcase = () => {
 
     const panelNum = 3;
 
-    const [windowHeight, setWindowHeight] = useState(getWindowHeight());
-    const [windowWidth, setWindowWidth] = useState (getWindowWidth());
-
     const navigate = useNavigate();
-    const [workData, setWorkData] = useState(WorkData);
-    const [showcaseList, setShowcaseList] = useState(workData.slice(0,panelNum).map((work) => (
+    const [workData] = useState(WorkData);
+    const [showcaseList] = useState(workData.slice(0,panelNum).map((work) => (
         <button onClick={() => {navigate("workpage", {state:{data: work}});}} key={work.id} className="showcasepanel">
             <img src={work.mainimage} alt={work.title} />
             <div className="showcaseText">{work.title}</div> 
@@ -46,13 +43,18 @@ const Showcase = () => {
     useEffect(() => {
 
         function WindowResize() { 
-            setWindowHeight(getWindowHeight());
-            setWindowWidth(getWindowWidth());
+            getWindowHeight();
+            getWindowWidth();
         }
 
         window.addEventListener('resize', WindowResize);
         return () => window.removeEventListener('resize', WindowResize);
     })
+
+    useEffect(() => {
+        getWindowHeight();
+        getWindowWidth();
+    }, []);
 
     return (
         <div className="showcase">
