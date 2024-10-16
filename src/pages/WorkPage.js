@@ -24,7 +24,7 @@ const WorkPage = () => {
 
             <div className="workpage">
                 <h1>{workData.title}</h1>
-                <WorkPageImages mainimage={workData.mainimage} images={workData.images}></WorkPageImages>
+                <WorkPageImages mainimage={workData.mainimage} images={workData.images} videos={workData.videos}></WorkPageImages>
                 <hr></hr>
                 <div className="workpagedescription">{ReactHtmlParser(workData.longdescription)}</div>
             </div>

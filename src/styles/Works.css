@@ -94,4 +94,5 @@
 
 .smallworkcard:hover img {
     opacity: 60%;
+    filter:blur(10px);
 }

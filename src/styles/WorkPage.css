@@ -9,9 +9,10 @@
     left:50%;
     box-sizing: border-box;
 
-    background-color: #4D4D4D;
+    background-color: #a8a8a8;
+    filter: drop-shadow(0 0 .5vw rgb(126, 126, 126));
     border-radius: 1vw;
-    width:40vw;
+    width:50vw;
     height:auto;
     margin-top: 2vw;
     padding: 4vw;
@@ -37,14 +38,15 @@
 .imagegallery .mainimage{
     box-sizing: border-box;
     width:100%;
-    height:100%;
+    aspect-ratio: 16/9;
     border-radius: .5vw;
     border: .1vw black solid;
 }
 
+
 .imagegallery .mainimagecontainer{
     width:100%;
-    height: 20vw;
+    height: auto;
 }
 
 .imagescroller {
@@ -63,25 +65,51 @@
     border-radius: 100%;
     cursor: pointer;
     font-size: 1vw;
+    filter: drop-shadow(0 .2vw rgba(0, 0, 0, 20%));
 }
 
 .smallimagecontainer {
+    position: relative;
     width:6vw;
     height:4vw;
     margin: 0 1vw 0 1vw;
+    border-radius: .5vw;
+    filter: drop-shadow(0 .2vw rgba(0, 0, 0, 20%));
+
+    border: .15vw transparent solid;
 }
 
 .imagescroller .smallimagecontainer .smallimage {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    aspect-ratio: 16/9;
     border-radius: .5vw;
-    
-    filter: drop-shadow(.2vw .2vw rgba(0, 0, 0, 20%));
 
 }
 
-.imagescroller *:hover {
+.material-symbols-outlined {
+    position: absolute;
+    z-index: 1;
+
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+
+    font-size: 3vw;
+    opacity: 70%;
+
+    pointer-events: none;
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+
+}
+
+.imagescroller .smallimagecontainer:hover, .imagescroller .gallerybtn:hover {
     transform: translate(0,-.1vw);
     filter: drop-shadow(0 .3vw rgb(0, 0, 0, 20%));
     transition: .2s;

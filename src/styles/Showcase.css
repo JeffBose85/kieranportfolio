@@ -34,7 +34,7 @@
 }
 
 .showcasepanel img:hover{
-    filter: none;
+    filter: blur(10px);
     transition: .5s;
     cursor: pointer;
 }
