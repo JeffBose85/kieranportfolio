@@ -1,6 +1,6 @@
 :root {
-    --mainBannerHeight: 5vw;
-    --sideBannerHeight: 6vw;
+    --mainBannerHeight: 3vw;
+    --sideBannerHeight: 4vw;
     --bannerGap: calc(var(--sideBannerHeight) - var(--mainBannerHeight))
 
     
@@ -16,7 +16,7 @@ body {
 .mainbanner h1 {
     margin:0;
     font-weight:900;
-    font-size: 4vw;
+    font-size: 2.5vw;
     
     text-align: center;
     vertical-align: middle;
@@ -27,7 +27,6 @@ body {
 .headroom {
     display:flex;
     justify-content: space-between;
-    
     width:100%;
     height: var(--mainBannerHeight);
     background-color: black;
@@ -65,7 +64,9 @@ body {
 
 .sidebanner {
     position: relative;
-    width:17vw;
+    display: flex;
+    align-items: center;
+    width:14vw;
     height: var(--sideBannerHeight);
     background-color: rgb(49, 49, 49);
     cursor: pointer;
@@ -77,11 +78,9 @@ body {
 
 .leftbanner {
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-    padding-left:6px;
 }
 
 .rightbanner {
-    padding-right:6px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
 }
 
@@ -95,17 +94,19 @@ body {
 
     width:auto;
     text-wrap: nowrap;
-    font-size: 2.3vw;
-    padding:1.5vw;
+    font-size: 1.8vw;
+    text-align: center;
 
 }
 
 .leftbanner h2 {
-    text-align: left;
+    position: absolute;
+    left:1vw;
 }
 
 .rightbanner h2 {
-    text-align: right;
+    position: absolute;
+    right:1vw;
 }
 
 /* @media (max-width: 480px) {
