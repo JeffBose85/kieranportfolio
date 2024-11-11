@@ -21,12 +21,17 @@ body {
     text-align: center;
     vertical-align: middle;
     text-wrap: nowrap;
+    text-decoration: none;
+}
+
+.mainbanner h1:hover{
+    color:gray;
 }
 
 
 .headroom {
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     width:100%;
     height: var(--mainBannerHeight);
     background-color: black;
@@ -60,6 +65,8 @@ body {
 .mainbanner {
     position: relative;
     width: auto;
+    text-decoration: none;
+    color:white;
 }
 
 .sidebanner {

@@ -14,8 +14,6 @@ function App() {
      <Routes>
        <Route path="/kieranportfolio" element={<MainPage/>} />
        <Route path="/kieranportfolio/workpage"  element={<WorkPage/>} />
-       <Route path="/kieranportfolio/aboutme" element={<AboutMe/>} />
-       
      </Routes>
     </div>
   );

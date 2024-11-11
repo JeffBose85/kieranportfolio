@@ -1,20 +1,25 @@
 .workpagecontainer {
+    display: flex;
+    justify-content: center;
     width:100%;
     height: auto;
+    
+    background-image: url("/public/images/background.png");
+    background-size: 25vw;
+    
 }
 
 .workpage {
-    position: absolute;
-    transform: translate(-50%);
-    left:50%;
     box-sizing: border-box;
+    /* position: absolute;
+    transform: translate(-50%,0);
+    left:50%; */
 
-    background-color: #a8a8a8;
-    filter: drop-shadow(0 0 .5vw rgb(126, 126, 126));
-    border-radius: 1vw;
+    background-color: #4B4F5B;
+    filter: drop-shadow(0 0 .5vw rgba(0, 0, 0, 40%));
     width:50vw;
     height:auto;
-    margin-top: 2vw;
+    margin-bottom: 2vw;
     padding: 4vw;
     padding-top: 3vw;
     padding-bottom: 1vw;
@@ -25,9 +30,10 @@
 }
 
 .workpage h1{
-    font-size: 2vw;
+    font-size: 1.75vw;
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: .8vw;
 }
 
 .imagegallery {
@@ -37,10 +43,10 @@
 
 .imagegallery .mainimage{
     box-sizing: border-box;
-    width:100%;
+    width:60%;
     aspect-ratio: 16/9;
-    border-radius: .5vw;
     border: .1vw black solid;
+    filter: drop-shadow(0 0 .5vw rgba(0, 0, 0, 40%));
 }
 
 
@@ -53,28 +59,27 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width:60%;
     margin-top:1vw;
 }
 
 .imagescroller button{
-    width:2.5vw;
-    height: 2.5vw;
+    width:1.5vw;
+    height: 1.5vw;
 
     border:none;
     border-radius: 100%;
     cursor: pointer;
-    font-size: 1vw;
-    filter: drop-shadow(0 .2vw rgba(0, 0, 0, 20%));
+    font-size: .8vw;
+    filter: drop-shadow(.2vw .2vw rgba(0, 0, 0, 30%));
 }
 
 .smallimagecontainer {
     position: relative;
     width:6vw;
-    height:4vw;
+    aspect-ratio: 16/9;
     margin: 0 1vw 0 1vw;
-    border-radius: .5vw;
-    filter: drop-shadow(0 .2vw rgba(0, 0, 0, 20%));
+    filter: drop-shadow(.2vw .2vw rgba(0, 0, 0, 30%));
 
     border: .15vw transparent solid;
 }
@@ -84,7 +89,6 @@
     width: 100%;
     height: 100%;
     aspect-ratio: 16/9;
-    border-radius: .5vw;
 
 }
 
@@ -110,8 +114,8 @@
 }
 
 .imagescroller .smallimagecontainer:hover, .imagescroller .gallerybtn:hover {
-    transform: translate(0,-.1vw);
-    filter: drop-shadow(0 .3vw rgb(0, 0, 0, 20%));
+    transform: translate(-.1vw,-.1vw);
+    filter: drop-shadow(.3vw .3vw rgb(0, 0, 0, 30%));
     transition: .2s;
 }
 

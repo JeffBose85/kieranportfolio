@@ -8,6 +8,8 @@ import WorkData from '../data/works.json';
 const Showcase = () => {
 
     const panelNum = 3;
+    let width = 1920;
+    let height = 1080;
 
     const navigate = useNavigate();
     const [workData] = useState(WorkData);
@@ -19,32 +21,29 @@ const Showcase = () => {
     )));
 
     function getWindowHeight() {
-        var height = window.innerHeight;
-        const bannerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--mainBannerHeight'));
+        height = window.innerHeight;
 
-        const showcaseHeight = height - bannerHeight;
+        let showcaseHeight = 85;
+        console.log(showcaseHeight);
 
-        document.documentElement.style.setProperty('--showcaseHeight', showcaseHeight + "px");
+        document.documentElement.style.setProperty('--showcaseHeight', showcaseHeight + "vh");
 
-        return showcaseHeight;
     }
 
     function getWindowWidth() {
-        var width = window.innerWidth;
+        width = window.innerWidth;
 
         var panelWidth = (width / panelNum) - 4;
         document.documentElement.style.setProperty('--showcaseWidth', width + 'px');
         document.documentElement.style.setProperty('--showcasePanelWidth', panelWidth + 'px');
 
-
-        return 0;
     }
 
     useEffect(() => {
 
         function WindowResize() { 
-            getWindowHeight();
             getWindowWidth();
+            getWindowHeight();
         }
 
         window.addEventListener('resize', WindowResize);
@@ -52,8 +51,8 @@ const Showcase = () => {
     })
 
     useEffect(() => {
-        getWindowHeight();
         getWindowWidth();
+        getWindowHeight();
     }, []);
 
     return (

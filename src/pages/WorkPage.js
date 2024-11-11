@@ -7,21 +7,10 @@ const WorkPage = () => {
 
     const loc = useLocation();
     const workData = loc.state.data;
+    const backgroundImage = process.env.PUBLIC_URL + "/images/background.png";
 
     return (
         <div className="workpagecontainer">
-            {/* <br/>
-            <br/>
-            <br/>
-            {workData.id}<br/>
-            {workData.title}<br/>
-            {workData.shortdescription}<br/>
-            {ReactHtmlParser(workData.longdescription)}<br/>
-            {workData.mainimage}<br/>
-            {workData.images.map((image) => {
-                return (image) + " ";
-            })}<br/> */}
-
             <div className="workpage">
                 <h1>{workData.title}</h1>
                 <WorkPageImages mainimage={workData.mainimage} images={workData.images} videos={workData.videos}></WorkPageImages>

@@ -15,8 +15,8 @@
     height: auto;
     background-color: #B9B9B9;
 
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:3vh;
+    padding-bottom:4vw;
 }
 
 .smallworkcard {
@@ -30,7 +30,7 @@
     margin: 2vw;
     border:none;
     border-radius: 1vw;
-    filter: drop-shadow(5px 5px rgb(0, 0, 0, 10%));
+    filter: drop-shadow(0 0 .3vw rgb(0, 0, 0, 40%));
     cursor: pointer;
 
     transition: .2s;
@@ -41,8 +41,8 @@
 }
 
 .smallworkcard:hover {
-    transform: translate(-5px,-5px);
-    filter: drop-shadow(10px 10px rgb(0, 0, 0, 20%));
+    transform: translate(-.1vw,-.1vw);
+    filter: drop-shadow(0 0 .6vw rgb(0, 0, 0, 60%));
     transition: .2s;
 }
 
@@ -69,7 +69,7 @@
     flex-direction: column;
 
     color:white;
-    filter: drop-shadow(2px 2px rgb(0, 0, 0, 10%));
+    filter: drop-shadow(.2vw .2vw rgb(0, 0, 0, 10%));
 
 }
 
