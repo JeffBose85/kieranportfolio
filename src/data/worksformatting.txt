@@ -1,0 +1,23 @@
+Supported/styled HTML tags:
+<p>
+<img>
+<iframe>
+
+/------------------------------------\
+
+img template:
+1. Import picture to 'public/images/' folder
+2. Replace [INSERT IMAGE NAME] with name of image with the extention. ex: picture.png
+<img src=\"/kieranportfolio/images/[INSERT IMAGE NAME]\"/>
+
+/------------------------------------\
+
+iframe template:
+Replace [INSERT VIDEO ID HERE] with video id from browser url
+
+<iframe src=\"https://www.youtube.com/embed/[INSERT VIDEO ID HERE]?controls=1\" allowFullScreen/></iframe>
+
+/------------------------------------\
+
+Break background color:
+<br class=\"break\">

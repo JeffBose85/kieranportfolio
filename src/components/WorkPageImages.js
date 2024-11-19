@@ -59,7 +59,7 @@ const WorkPageImages = (props) => {
             </div>
             <div className="imagescroller">
                 <button onClick={handleClickLeft} className="gallerybtn imageleft">
-                    <span class="material-symbols-outlined">arrow_forward</span>
+                    <span className="material-symbols-outlined">arrow_forward</span>
                 </button>
                 {gallery.slice(imageStart, imageEnd).map((image, index) => {
 
@@ -107,7 +107,7 @@ const WorkPageImages = (props) => {
                     );
                 })}
                 <button onClick={handleClickRight} className="gallerybtn imageright">
-                    <span class="material-symbols-outlined">arrow_forward</span>
+                    <span className="material-symbols-outlined">arrow_forward</span>
                 </button>
             </div>
         </div>

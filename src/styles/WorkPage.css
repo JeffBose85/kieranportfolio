@@ -1,32 +1,51 @@
 .workpagecontainer {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width:100%;
     height: auto;
-    
+/*     
     background-image: url("/public/images/background.png");
     background-size: 25vw;
-    
-}
-
-.workpage {
+     */
+     
     box-sizing: border-box;
     /* position: absolute;
     transform: translate(-50%,0);
     left:50%; */
 
-    background-color: #4B4F5B;
-    filter: drop-shadow(0 0 .5vw rgba(0, 0, 0, 40%));
-    width:50vw;
-    height:auto;
-    margin-bottom: 2vw;
-    padding: 4vw;
-    padding-top: 3vw;
-    padding-bottom: 1vw;
 
     color:white;
     font-size: 1vw;
+    
+}
 
+.workpagesection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4B4F5B;
+
+    padding: 1vw 0 1vw 0;
+
+}
+
+.dark {
+ background-color: #0e0e0e;
+}
+
+.med {
+    background-color: #444444;
+}
+
+.light {
+    background-color: #6d6d6d;
+}
+
+.workpagecontent {
+    width:50vw;
+    
 }
 
 .workpage h1{
@@ -39,6 +58,7 @@
 .imagegallery {
     position: relative;
     margin-bottom: 2vw;
+    width:50vw;
 }
 
 .imagegallery .mainimage{
@@ -72,6 +92,8 @@
     cursor: pointer;
     font-size: .8vw;
     filter: drop-shadow(.2vw .2vw rgba(0, 0, 0, 30%));
+    color:white;
+    background-color: transparent;
 }
 
 .imagescroller button span {
@@ -89,15 +111,8 @@
     transform: scaleX(-1);
 }
 
-.imagescroller .smallimagecontainer:hover, .imagescroller .imageright:hover {
-    transform: translate(-.1vw,-.1vw);
-    filter: drop-shadow(.3vw .3vw rgb(0, 0, 0, 30%));
-    transition: .2s;
-}
-
-.imagescroller .imageleft:hover {
-    transform: translate(-.1vw,-.1vw) scaleX(-1);
-    filter: drop-shadow(.3vw .3vw rgb(0, 0, 0, 30%));
+.imagescroller button:hover {
+    color:gray;
     transition: .2s;
 }
 
@@ -107,8 +122,14 @@
     aspect-ratio: 16/9;
     margin: 0 1vw 0 1vw;
     filter: drop-shadow(.2vw .2vw rgba(0, 0, 0, 30%));
-
+    
     border: .15vw transparent solid;
+}
+
+.imagescroller .smallimagecontainer:hover {
+    transform: translate(-.1vw,-.1vw);
+    filter: drop-shadow(.3vw .3vw rgb(0, 0, 0, 30%));
+    transition: .2s;
 }
 
 .imagescroller .smallimagecontainer .smallimage {
@@ -148,22 +169,16 @@
     border:.15vw white solid;
 }
 
-.workpagedescription {
-    padding:1vw;
-    height: auto;
-    min-height: 400px;
-}
-
-.workpagedescription p{
+.workpagecontent p{
     margin: 1vw 0 1vw 0;
     font-size: 1vw;
 }
 
-.workpagedescription img {
+.workpagecontent img {
     width:80%;
 }
 
-.workpagedescription iframe {
+.workpagecontent iframe {
     width:80%;
     aspect-ratio: 16/9;
     border: none;
