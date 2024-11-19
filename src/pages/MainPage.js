@@ -12,7 +12,7 @@ const MainPage = () => {
 
     useEffect(() => {
 
-        console.log("Path change");
+        // console.log("Path change");
 
         window.scrollTo({
             top:0,

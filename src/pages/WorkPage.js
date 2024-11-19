@@ -15,7 +15,11 @@ const WorkPage = () => {
                 <h1>{workData.title}</h1>
                 <WorkPageImages mainimage={workData.mainimage} images={workData.images} videos={workData.videos}></WorkPageImages>
                 <hr></hr>
-                <div className="workpagedescription">{ReactHtmlParser(workData.longdescription)}</div>
+                <div className="workpagedescription">
+                    {workData.longdescription.map((ele) => {
+                        return (ReactHtmlParser(ele))
+                    })}
+                    </div>
             </div>
         </div>
      );

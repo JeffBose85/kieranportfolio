@@ -10,7 +10,7 @@ const WorkCard = (work) => {
     const navigate = useNavigate();
 
     function WorkClicked() {
-        navigate("workpage", {state:{data: workData}});
+        navigate("/kieranportfolio/workpage", {state:{data: workData}});
     }
 
     return ( 

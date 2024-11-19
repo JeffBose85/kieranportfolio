@@ -14,7 +14,7 @@ const Showcase = () => {
     const navigate = useNavigate();
     const [workData] = useState(WorkData);
     const [showcaseList] = useState(workData.slice(0,panelNum).map((work) => (
-        <button onClick={() => {navigate("workpage", {state:{data: work}});}} key={work.id} className="showcasepanel">
+        <button onClick={() => {navigate("/kieranportfolio/workpage", {state:{data: work}});}} key={work.id} className="showcasepanel">
             <img src={work.mainimage} alt={work.title} />
             <div className="showcaseText">{work.title}</div> 
         </button>
@@ -24,7 +24,7 @@ const Showcase = () => {
         height = window.innerHeight;
 
         let showcaseHeight = 85;
-        console.log(showcaseHeight);
+        // console.log(showcaseHeight);
 
         document.documentElement.style.setProperty('--showcaseHeight', showcaseHeight + "vh");
 

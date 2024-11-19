@@ -74,6 +74,33 @@
     filter: drop-shadow(.2vw .2vw rgba(0, 0, 0, 30%));
 }
 
+.imagescroller button span {
+    position: absolute;
+    z-index: 1;
+
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+
+    font-size: 1.2vw;
+}
+
+.imagescroller .imageleft {
+    transform: scaleX(-1);
+}
+
+.imagescroller .smallimagecontainer:hover, .imagescroller .imageright:hover {
+    transform: translate(-.1vw,-.1vw);
+    filter: drop-shadow(.3vw .3vw rgb(0, 0, 0, 30%));
+    transition: .2s;
+}
+
+.imagescroller .imageleft:hover {
+    transform: translate(-.1vw,-.1vw) scaleX(-1);
+    filter: drop-shadow(.3vw .3vw rgb(0, 0, 0, 30%));
+    transition: .2s;
+}
+
 .smallimagecontainer {
     position: relative;
     width:6vw;
@@ -92,7 +119,8 @@
 
 }
 
-.material-symbols-outlined {
+.playcircle {
+    
     position: absolute;
     z-index: 1;
 
@@ -104,7 +132,9 @@
     opacity: 70%;
 
     pointer-events: none;
+}
 
+.material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -113,11 +143,6 @@
 
 }
 
-.imagescroller .smallimagecontainer:hover, .imagescroller .gallerybtn:hover {
-    transform: translate(-.1vw,-.1vw);
-    filter: drop-shadow(.3vw .3vw rgb(0, 0, 0, 30%));
-    transition: .2s;
-}
 
 .selectedimage {
     border:.15vw white solid;
