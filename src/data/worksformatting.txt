@@ -17,6 +17,9 @@ Replace [INSERT VIDEO ID HERE] with video id from browser url
 
 <iframe src=\"https://www.youtube.com/embed/[INSERT VIDEO ID HERE]?controls=1\" allowFullScreen/></iframe>
 
+If the video is for the image gallery:
+"https://www.youtube.com/embed/[INSERT VIDEO ID HERE]?controls=1&autoplay=1&mute=1"
+
 /------------------------------------\
 
 Break background color:
@@ -24,5 +27,5 @@ Break background color:
 
 /------------------------------------\
 
-download link:
+Download link:
 Copy and paste entire link. Make sure https:// is included

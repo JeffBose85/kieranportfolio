@@ -8,7 +8,7 @@
         "shortdescription": "Small description w1!",
         "longdescription": ["<p>This is a test description of the first test work!</p>"],
         "mainimage": "/kieranportfolio/images/worktestimage1.jpg",
-        "videos": ["https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1"],
+        "videos": ["https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&autoplay=1&mute=1"],
         "images": ["/kieranportfolio/images/worktestimage2.jpg","/kieranportfolio/images/worktestimage3.jpg","/kieranportfolio/images/worktestimage4.jpg"]
     },
     {
@@ -20,7 +20,7 @@
         "shortdescription": "This is a test description of the second test work! ",
         "longdescription": ["<p>This is a test description of the second test work!</p>"],
         "mainimage": "/kieranportfolio/images/worktestimage2.jpg",
-        "videos": ["https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1"],
+        "videos": ["https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&autoplay=1&mute=1"],
         "images": ["/kieranportfolio/images/worktestimage1.jpg","/kieranportfolio/images/worktestimage3.jpg","/kieranportfolio/images/worktestimage4.jpg","/kieranportfolio/images/worktestimage1.jpg","/kieranportfolio/images/worktestimage3.jpg","/kieranportfolio/images/worktestimage4.jpg"]
     },
     {
@@ -36,7 +36,7 @@
                             "<iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1\" allowFullScreen/></iframe>",
                             "<img src=\"/kieranportfolio/images/worktestimage3.jpg\"/>"],
         "mainimage": "/kieranportfolio/images/worktestimage3.jpg",
-        "videos": ["https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1"],
+        "videos": ["https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&autoplay=1&mute=1"],
         "images": ["/kieranportfolio/images/worktestimage1.jpg","/kieranportfolio/images/worktestimage2.jpg","/kieranportfolio/images/worktestimage4.jpg"]
     },
     {
@@ -54,7 +54,7 @@
                             "<br class=\"break\">",
                             "<p>Test text </p>","<p>Test text </p>"],
         "mainimage": "/kieranportfolio/images/worktestimage4.jpg",
-        "videos": ["https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1"],
+        "videos": ["https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&autoplay=1&mute=1"],
         "images": ["/kieranportfolio/images/worktestimage1.jpg","/kieranportfolio/images/worktestimage3.jpg","/kieranportfolio/images/worktestimage2.jpg"]
     }
 ]
