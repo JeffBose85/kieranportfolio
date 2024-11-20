@@ -1,10 +1,10 @@
-1. Work info box
-1b. Download anything probably in info box
-2. Work background 100% width
+1. Work info box (DONE)
+1b. Download anything probably in info box (DONE)
+2. Work background 100% width (DONE)
 3. About me inbetween showcase and works
 4. Socials under header
 5. Titles under works
-6. Add more tag support to work description (h1,h2)
+6. Add more tag support to work description (h1,h2) (DONE)
 7. More works like section under work page
 8. Fix refresh 404 error
 

@@ -16,12 +16,13 @@ const WorkPage = () => {
         <div className="workpagecontainer">
             <div className="workpagesection dark">
                 <div className="workpagecontent imagesection">
-                    <div className='worksectionimages'>
-                        <h1>{workData.title}</h1>
-                        <WorkPageImages mainimage={workData.mainimage} images={workData.images} videos={workData.videos}></WorkPageImages>
+                    <h1>{workData.title}</h1>
+                    <div className='imagegalleryinfobox'>
+                        <div className='worksectionimages'>
+                            <WorkPageImages mainimage={workData.mainimage} images={workData.images} videos={workData.videos}></WorkPageImages>
+                        </div>
+                        <WorkPageInfobox infotitles={workData.infotitles} infodata={workData.infodata} downloadlink={workData.downloadlink}/>
                     </div>
-                    <WorkPageInfobox infotitles={workData.infotitles} infodata={workData.infodata} downloadlink={workData.downloadlink}/>
-
 
                 </div>
             </div>
