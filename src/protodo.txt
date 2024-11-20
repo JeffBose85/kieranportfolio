@@ -7,3 +7,15 @@
 6. Add more tag support to work description (h1,h2)
 7. More works like section under work page
 8. Fix refresh 404 error
+
+Work Info Box:
+Type
+My Role
+Date
+Software Used
+Download
+
+
+
+
+

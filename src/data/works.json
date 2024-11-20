@@ -2,6 +2,9 @@
     {
         "id": 1,
         "title": "Test Work 1",
+        "infotitles":["Project Type","My Role","Date","Software Used"],
+        "infodata":["Platformer","Developer","11/19/1946 - 5/3/2002","Unreal Engine"],
+        "downloadlink":"https://www.google.com",
         "shortdescription": "Small description w1!",
         "longdescription": ["<p>This is a test description of the first test work!</p>"],
         "mainimage": "/kieranportfolio/images/worktestimage1.jpg",
@@ -11,6 +14,9 @@
     {
         "id": 2,
         "title": "Test Work 2",
+        "infotitles":["Project Type","My Role","Date","Software Used"],
+        "infodata":["Platformer","Developer","11/19/1946 - 5/3/2002","Unreal Engine"],
+        "downloadlink":"https://www.google.com",
         "shortdescription": "This is a test description of the second test work! ",
         "longdescription": ["<p>This is a test description of the second test work!</p>"],
         "mainimage": "/kieranportfolio/images/worktestimage2.jpg",
@@ -20,6 +26,9 @@
     {
         "id": 3,
         "title": "Long Title of Eternal Doom",
+        "infotitles":["Project Type","My Role","Date","Software Used"],
+        "infodata":["Platformer","Developer","11/19/1946 - 5/3/2002","Unreal Engine"],
+        "downloadlink":"https://www.google.com",
         "shortdescription": "Small description w3!",
         "longdescription": ["<p>Paragraph 1</p>",
                             "<p>Paragraph 2</p>",
@@ -33,6 +42,9 @@
     {
         "id": 4,
         "title": "Long Title of Eternal Doom",
+        "infotitles":["Project Type","My Role","Date","Software Used"],
+        "infodata":["Platformer","Developer","11/19/1946 - 5/3/2002","Unreal Engine"],
+        "downloadlink":"https://www.google.com",
         "shortdescription": "This is a test description of the fourth test work! This is a test description of the fourth test work!",
         "longdescription": ["<p>TESTING.</p>",
                             "<img src=\"/kieranportfolio/images/worktestimage3.jpg\"/>",

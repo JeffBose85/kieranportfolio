@@ -21,3 +21,8 @@ Replace [INSERT VIDEO ID HERE] with video id from browser url
 
 Break background color:
 <br class=\"break\">
+
+/------------------------------------\
+
+download link:
+Copy and paste entire link. Make sure https:// is included
