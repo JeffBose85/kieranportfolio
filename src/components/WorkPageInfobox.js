@@ -3,6 +3,7 @@ const WorkPageInfobox = (props) => {
     const infotitles = props.infotitles;
     const infodata = props.infodata;
     const downloadlink = props.downloadlink;
+    const downloadtext = props.downloadtext;
 
     function downloadClicked() {
         window.open(downloadlink, '_blank');
@@ -21,7 +22,7 @@ const WorkPageInfobox = (props) => {
                 )
             })}
 
-            <button className="infoboxdownload" onClick={downloadClicked}>DOWNLOAD</button>
+            <button className="infoboxdownload" onClick={downloadClicked}>{downloadtext}</button>
         </div>
      );
 }

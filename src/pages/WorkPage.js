@@ -21,7 +21,7 @@ const WorkPage = () => {
                         <div className='worksectionimages'>
                             <WorkPageImages mainimage={workData.mainimage} images={workData.images} videos={workData.videos}></WorkPageImages>
                         </div>
-                        <WorkPageInfobox infotitles={workData.infotitles} infodata={workData.infodata} downloadlink={workData.downloadlink}/>
+                        <WorkPageInfobox infotitles={workData.infotitles} infodata={workData.infodata} downloadlink={workData.downloadlink} downloadtext={workData.downloadtext}/>
                     </div>
 
                 </div>
